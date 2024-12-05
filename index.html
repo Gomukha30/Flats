@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Flat Booking</title>
+</head>
+
+<body>
+    <!-- Home Page -->
+    <div id="HomePage" class="section">
+        <div class="screen d-flex flex-column justify-content-between">
+            <div class="card-container">
+                <div class="header-container">
+                    <h1 class="main-heading">Welcome to Sunrise Avenue</h1>
+                    <p class="sub-heading">Move to what moves you</p>
+                </div>
+                <button class="button" onclick="display('SunriseAvenuePage')">Book Flat</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sunrise Avenue Page -->
+    <div id="SunriseAvenuePage" class="section hidden">
+        <div class="screen1">
+            <h1 class="main-heading">Sunrise Avenue Flats</h1><br>
+            <div class="cards">
+                <!-- 3BHK Card -->
+                <div class="card1-container d-flex" onclick="display('3BHKDescriptionPage')">
+                    <img class="img" src="assets/flats-list-card1-img.png" alt="3BHK Flat">
+                    <div class="text-container">
+                        <h2 class="mini-heading">3BHK Flat</h2>
+                        <p class="para">This is a fully furnished house with handmade furniture including a luxury ensuite facilities pack.
+                            Its built-up area is about 1600sq.ft. A spacious home for you to live in.</p>
+                    </div>
+                </div>
+                <!-- 2BHK Card -->
+                <div class="card1-container d-flex" onclick="display('2BHKDescriptionPage')">
+                    <img class="img" src="assets/flats-list-card2-img.png" alt="2BHK Flat">
+                    <div class="text-container">
+                        <h2 class="mini-heading">2BHK Flat</h2>
+                        <p class="para">A minimalist house made for modern-day families. It is fully furnished with trending furniture.Its built-up area is about
+                            1200sq.ft.</p>
+                    </div>
+                </div>
+                <!-- 4BHK Card -->
+                <div class="card1-container d-flex" onclick="display('4BHKDescriptionPage')">
+                    <img class="img" src="assets/flats-list-card3-img.png" alt="4BHK Flat">
+                    <div class="text-container">
+                        <h2 class="mini-heading">4BHK Flat</h2>
+                        <p class="para">A contemporary home with more color and vibrancy. It is fully furnished with elegant furniture.Its
+                            built-up area ia about 3600sq.ft</p>
+                    </div>
+                </div>
+            </div><br>
+            <button class="button" onclick="display('HomePage')">Back</button>
+        </div>
+    </div>
+
+    <!-- Description Pages -->
+    <div id="3BHKDescriptionPage" class="section hidden">
+        <div class="screen1">
+            <img class="img2" src="assets/flats-list-d1-img.png" alt="3BHK">
+            <div class="details-section">
+                <h1 class="desc-heading">3BHK Flat</h1>
+                <div class="location-container">
+                    <span class="location-icon">&#x1F4CD;</span>
+                    <p class="desc-para">D/N 5-2, Food Street, Indore</p>
+                </div>
+                <p class="desc-para">A fully furnished home with luxury handmade furniture. Built-up area: 1600 sq.ft.</p>
+                <p class="desc-para">Rent: Rs 3000/- per month</p>
+            </div>
+            <div class="button-container">
+                <button class="button" onclick="display('SunriseAvenuePage')">Back</button>
+                <button class="button" onclick="confirmBooking()">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="2BHKDescriptionPage" class="section hidden">
+        <div class="screen1"> 
+            <img class="img2" src="assets/flats-list-d2-img.png" alt="2BHK">
+            <div class="details-section">
+                <h1 class="desc-heading">2BHK Flat</h1>
+                <div class="location-container">
+                    <span class="location-icon">&#x1F4CD;</span>
+                    <p class="desc-para">D/N 6-2, Food Street, Indore</p>
+                </div>
+                <p class="desc-para">Minimalist house with modern furniture. Built-up area: 1200 sq.ft.</p>
+                <p class="desc-para">Rent: Rs 2000/- per month</p>
+            </div>
+            <div class="button-container">
+                <button class="button" onclick="display('SunriseAvenuePage')">Back</button>
+                <button class="button" onclick="confirmBooking()">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="4BHKDescriptionPage" class="section hidden">
+        <div class="screen1">
+            <img class="img2" src="assets/flats-list-d3-img.png" alt="4BHK">
+            <div class="details-section">
+                <h1 class="desc-heading">4BHK Flat</h1>
+                <div class="location-container">
+                    <span class="location-icon">&#x1F4CD;</span>
+                    <p class="desc-para">D/N 7-2, Food Street, Indore</p>
+                </div>
+                <p class="desc-para">Spacious home with elegant, vibrant furniture. Built-up area: 3600 sq.ft.</p>
+                <p class="desc-para">Rent: Rs 4000/- per month</p>
+            </div>
+            <div class="button-container">
+                <button class="button" onclick="display('SunriseAvenuePage')">Back</button>
+                <button class="button" onclick="confirmBooking()">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

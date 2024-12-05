@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.section {
+    display: none;
+}
+
+.section:not(.hidden) {
+    display: block;
+}
+
+.screen {
+    background: url('assets/flats-list-bg.png') no-repeat center center;
+    background-size: cover;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+.screen1 {
+    background-color: black;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.header-container {
+    margin-top: 50px;
+}
+
+.main-heading {
+    font-size: 36px;
+    color: #f19116;
+    margin: 0;
+}
+
+.sub-heading {
+    font-size: 20px;
+    color: #7b8794;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .button {
+    color: white;
+    background-color: #f19116;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+} */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card1-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card1-container:hover {
+    transform: translateY(-5px);
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-container {
+    padding: 10px;
+}
+
+.mini-heading {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.desc-heading {
+    font-size: 28px;
+    color: #f19116;
+}
+
+.desc-para {
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+}
+
+.img1 {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.details-section {
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+.img2{
+    height: 60vh;
+}
+.desc-heading {
+    font-size: 28px;
+    color: #f19116;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.location-icon {
+    font-size: 20px;
+    color: #f19116;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    flex: 1;
+    margin: 0 5px;
+    color: white;
+    background-color: #f19116;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
